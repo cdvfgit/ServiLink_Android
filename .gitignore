@@ -1,0 +1,31 @@
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Config local (rutas del SDK propias de cada máquina)
+local.properties
+
+# Android Studio / sistema
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+output-metadata.json
+
+# Capturas y archivos temporales de desarrollo
+*.png
+*.jpg
+*.jpeg
+s1.png
+shot_*
+
+# Sistema
+.DS_Store
+Thumbs.db
