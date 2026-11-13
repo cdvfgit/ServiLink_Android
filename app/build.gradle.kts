@@ -15,9 +15,19 @@ android {
         versionName = "1.0"
     }
 
+    signingConfigs {
+        create("release") {
+            storeFile = file("../servilink-release.jks")
+            storePassword = "ServiLink2026!"
+            keyAlias = "servilink"
+            keyPassword = "ServiLink2026!"
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
+            signingConfig = signingConfigs.getByName("release")
         }
     }
 
